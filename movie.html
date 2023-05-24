@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="movie.css">
+    <title>Movie Detail</title>
+</head>
+<body>
+<!-- code for navigation bar---- -->
+    <nav>
+        <div class="navigation-bar">
+            <div class="logo">
+                <img src="./download.png">
+                <h3>CLONE</h3>
+            </div>
+            <div class="detail-div"><p class="detail">Details of the Movie...</p>
+            </div>
+        </div>
+    </nav>
+<!-- code for main content(movie detail area,after clicking on particular movie) -->
+    <div class="title-container">
+        <div id="title-div">
+            <h1 id="title">Avenger: Infinity Wars</h1>
+            <div id="year-div" class="time-year">
+                <p id="year">2019</p>
+                <p id="runtime">315min</p>
+            </div>
+        </div>
+        <div class="rating-div">
+            <h3 id="rating-text">Rating</h3>
+            <span>⭐ </span><span id="rating">8.4/10</span>
+        </div>
+        
+    </div>
+    <!-- movie's image and detail code after fetch from api -->
+    <main>
+        <div class="content">
+            <div class="pic">
+                <img id="poster" src="">
+            </div>
+            <div class="movie-details">
+                <div class="md">
+            <h3 >Plot</h3>
+               
+               <p id="plot">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dolore possimus commodi quia libero, nostrum corrupti facere hic illum saepe sunt id officiis aperiam dolores?</p>
+               <h4 >Directors :<span id="director-names">lorem,lorem,lorem</span></h4>
+               <h4 >Cast :<span id="cast-names">lorem,lorem,lorem</span></h4>
+               <h4 >Genre :<span id="genre">lorem,lorem,lorem</span></h4>
+            </div>
+            </div>
+        </div>
+    </main>
+<!-- code for home button -->
+    <a href="./index.html">
+        <button class="home-button" type="button" > 🔙 Home</button>
+    </a>
+    <script src="movieInfo.js"></script>
+</body>
+</html>

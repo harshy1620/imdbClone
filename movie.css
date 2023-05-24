@@ -1,0 +1,179 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background:url(./avenger.jpg);
+}
+/* for disapperaing the scroll bar--- */
+body::-webkit-scrollbar{
+    display:none;
+}
+/* css code for navigation bar------ */
+nav{
+    width:100vw;
+    background-color:black ;
+}
+.navigation-bar{
+    width: 70vw;
+    margin: 0 15vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content:space-between;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo h3{
+    color: white;
+    font-size: 20px;
+    margin-left:10px;
+}
+.logo img{
+    height:32px;
+    width:65px;
+   border-radius: 4px; 
+}
+.detail{
+    color: #fbc010;
+    font-size: 20px;
+}
+ /* css code for home button----- */
+.home-button{
+    position: absolute;
+    bottom: 20px;
+    right: 47%;
+    background-color: #fbc010;
+    color: rgb(24, 23, 23);
+    padding: 10px;
+    width: 80x;
+    border-radius: 10px;
+    margin:15px 0 0 20px;
+    font-weight: bold;
+}
+/* css code for the main content area(title of movie,image,detail of the mopvie) */
+.title-container{
+    width: 60vw;
+    margin: 5% 20vw 0 20vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#title-div #title{
+    color:#fbc010;
+    margin:0 0 10px 0;
+}
+#title-div p{
+    color:rgb(255, 255, 255);
+    margin:0 0 5px 0;
+    font-weight: bold;
+}
+.rating-div #rating-text{
+    margin:0 0 10px 0;
+    color:#fbc010 !important;
+}
+.title-container #rating{
+    color: white;
+}
+.time-year{
+    display: flex;
+    width: 150px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+main{
+    width: 100vw;
+    /* height: 65vh; */
+    box-sizing: border-box;   
+}
+.content{
+    margin: 2% 20vw;
+    display: flex;
+    flex-direction: row;
+    height:45vh;
+    width:60vw;
+    background:linear-gradient(to right,rgb(0, 0, 0),rgb(65, 65, 65));
+    box-shadow: 0 4px 8px 0 rgba(9, 8, 8, 0.5), 0 6px 20px 0 rgba(65, 64, 64, 0.19);
+}
+.pic{
+    height:100%;
+    width: 50%;
+}
+.pic #poster{
+    height: inherit !important;
+    width:100%;
+}
+.movie-details{
+    /* height:auto !important; */
+    background:linear-gradient(to right,rgb(0, 0, 0),rgb(61, 59, 59));
+    /* width: 70%; */
+   text-align: justify;
+   color:white !important;
+  
+   
+}
+.movie-details .md{
+    margin:5% 10% 5% 3%;
+}
+.md h4{
+    color:#fbc010 !important;
+}
+.md span{
+    color:rgb(60, 60, 171) !important;
+    margin-left:5px;
+}
+
+
+/* @media (max-width: 600px) {
+    .content{
+    width:50%;
+    }
+    .pic{
+        width:50%;
+        }
+}  */
+
+@media (max-width:900px){
+    .content{
+        flex-direction: column;
+    }
+    .pic{
+        width: 100%;
+        /* height: 70%; */
+    }
+    .md{
+        padding:0 5px;
+    }
+    .home-button{
+        position: fixed;
+        bottom: 20px;
+        right: 10px;
+        padding: 10px;
+        width: 60px;
+        border-radius: 10px;
+        margin:0;
+    }
+}
+@media (max-width:500px) {
+    .logo{
+        flex-direction: column;
+        margin-top:5%
+    }
+    .logo h3{
+        margin-top: 4px;
+    }
+    .detail{
+        margin-left:20px;
+    }
+    /* .title-container{
+        flex-direction: column;
+        align-items: left;
+    } */
+}

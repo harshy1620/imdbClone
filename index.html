@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script
+    src="https://kit.fontawesome.com/74894dafb2.js"
+    crossorigin="anonymous"
+  ></script>
+    <title>IMDB Clone App</title>
+</head>
+<body>
+<!-- code for navigation bar---------------------------------- -->
+    <nav>
+        <div class="navigation-bar">
+            <div class="logo">
+                <img src="./download.png">
+                <h3>CLONE</h3>
+            </div>
+            <div class="search-bar">
+                <input type="text" class="searching-bar"
+                placeholder="Search IMDb"
+                id="search">
+                    <i class="fa-solid fa-magnifying-glass glass-pic" style="color: #000;"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- code for main content(suggestions will appear here after search)---- -->
+   <main>
+      <div class="main-content">
+        <p id="empty-search-text" style="color:white;font-size:20px; opacity: 0.8; text-align: center;">
+           After search your suggestions will appear here... 
+          </p>
+        <div class="card-container" id="card-container">
+
+        </div>
+      </div>
+      <!-- code for aside section where favourite movie will appear----------- -->
+      <div class="aside" id="favorites-section">
+        <h2><i class="fa-heart fa-solid text-muted" style="color:red"></i> Favourites </h2>
+
+        <div id="empty-fav-text">
+            <p style="color:white;font-size:20px; opacity: 0.5;margin-left:5%; text-align:center" >
+                Your Favourites will appear here.
+            </p>
+          </div>
+        <div id="fav-movies-container">
+              <div class="fav-card">
+                <div class="fav-img">
+                    <img src="http://www.blackfilm.com/read/wp-content/uploads/2018/03/Avengers-Infinity-War-new-poster.jpg" alt="Movie">
+                </div>
+                    <div class="detail-movie">
+                        <div>
+                            <h4>Avengers</h4>
+                            <p>2009</p>
+                        </div>
+                        <i class="fas fa-trash" data-id="${movie.Title}" style="color: #ffea00;"></i>
+                    </div>
+              </div>
+        </div>
+
+      </div>
+    </main>
+      
+      
+
+    <script src="script.js"></script>
+</body>
+</html>

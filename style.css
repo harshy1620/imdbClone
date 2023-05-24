@@ -1,0 +1,276 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+/* for disappperaing the scroll bar */
+body::-webkit-scrollbar{
+    display:none;
+}
+/* css code for navigation bar */
+nav{
+    width:100vw;
+    background-color:black ;
+}
+.navigation-bar{
+    width: 85%;
+    margin: 0 7.5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo h3{
+    color: white;
+    font-size: 20px;
+    margin-left:10px;
+}
+.logo img{
+    height:32px;
+    width:65px;
+   border-radius: 4px;
+}
+
+.search-bar{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    align-items: center;
+}
+.search-bar input{
+    height:30px;
+    width:inherit ;
+    border-radius:10px 0 0 10px ;
+    border: 0;
+    outline: none;
+    font-size:14px;
+    padding-left:7px ;
+}
+.search-bar .glass-pic{
+    background-color: #fbc010;
+    padding:8px 20px;
+    border-radius: 0 10px 10px 0;
+    box-sizing: border-box;
+}
+/* css code for the main content area----- */
+main{
+    background-image: url('avenger.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+  }
+  .main-content{
+    height: 80vh;
+    width: 70%;
+    overflow-y:scroll !important;
+    padding: 0 8% 5% 8%;
+}
+#empty-search-text{
+  margin-top:10%;
+}
+.main-content::-webkit-scrollbar{
+    display:none;
+}
+.card-container{
+    /* position: fixed; */
+    display:flex !important;
+    flex-direction: row !important;
+     flex-wrap: wrap !important;
+      margin-right:20px; 
+      /* box-sizing: border-box; */
+}
+
+.card-container h2{
+    font-size: 15px;
+}
+.card {
+    width: 200px;
+    margin: 0 auto;
+    background-color: #010101;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top:5%;
+    box-shadow: 0 4px 6px rgba(45, 45, 45, 0.1);
+  }
+    a{
+    text-decoration: none;
+  }
+  .card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  .card-title {
+    font-weight: bold;
+    margin: 10px 0 1px 0;
+    color: white;
+  }
+.details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3px;
+    }
+  .rating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .rating span {
+    color: #fdd835;
+    margin-right: 5px;
+  }
+  .favorite-icon {
+    font-size: 25px;
+    color: red;
+    margin-left: auto;
+    cursor: pointer;
+  }
+  .favorite-icon:hover {
+    transform: translateY(3px);
+    transition: all 0.1s ease-in-out;
+  }
+
+ 
+  /* css code for aside(favourite section) sectipon */
+.aside{
+    height: 91vh;
+    width: 30%;
+    background-color: rgb(43, 39, 39);
+    overflow-y:scroll !important;
+}
+.aside::-webkit-scrollbar{
+    display:none;
+}
+.aside h2{
+    position: sticky;
+    background-color: rgb(43, 39, 39);
+    padding-bottom:8px;
+    padding-top:20px;
+    top: 0;
+    z-index: 100;
+    color: white;
+    text-align: center;
+    margin:0% 5% 5% 5%;
+    font-family:sans-serif;
+    user-select: none;
+}
+.fav-movies-container{
+    padding: 5px;
+    height: auto;
+    width: auto;
+background-color: antiquewhite;
+}
+.fav-card{
+    display: flex;
+    flex-direction:row;
+    background-color: black;
+    margin:5%;
+    padding: 0;
+    height: 100%;
+    border-radius: 8px;
+}
+.fav-img img{
+    height: 100%;
+    width: 70px;
+    border-radius:8px 0 0 8px;
+}
+.detail-movie{
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    padding: 15px;
+    justify-content: space-between;
+    width: 80%;
+ 
+}
+.detail-movie h4, p{
+    color: white;
+    margin: 0;
+    padding: 0;
+    /* overflow:hidden; */
+}
+.detail-movie p{
+    margin-top: 5px;
+    font-size: 15px;
+    opacity: 0.5;
+}
+.fa-trash:hover{
+  transform: translateY(2px);
+  transition: all 0.1s ease-in-out;
+}
+ /* Media Query for responsiveness */
+ @media (max-width: 600px) {
+    .card {
+      max-width: 100%;
+    }
+    .search-bar{
+      width: 60%;
+      margin-left: 100px;
+    }
+    .aside{
+      width:45%;
+    }
+    .fav-img img{
+      width:58px;
+    }
+    .detail-movie p,h4 {
+      font-size:11px;
+      /* margin-right:5px; */
+    }
+    .detail-movie i {
+      margin-left: 5px;
+    }
+    .fav-card{
+      flex-direction:column;
+      height: 100%;
+  }
+  .fav-img img{
+    height: 100%;
+    width: 100%;
+    border-radius:8px 8px 0 0px;
+}
+   
+  }
+  @media (max-width: 400px) {
+    .search-bar .glass-pic{
+      padding:8px 10px;
+      border-radius: 0 10px 10px 0;
+      box-sizing: border-box;
+  }
+  .search-bar{
+    /* margin-right:30%; */
+    width: 50%;
+    align-items: center;
+    margin-left:-1%;
+}
+
+.logo{
+  flex-direction: column;
+  margin-top:5%;
+  margin-left:2%;
+}
+.logo h3{
+  margin-top:5px;
+}
+  }
+
+
+
+
+
+ 
+ 
