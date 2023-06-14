@@ -5,13 +5,13 @@ click to this link for quick preview of my project
 
 # IMDB APP Clone
 
-This GitHub repository contains the source code for an IMDB app clone, developed using HTML, CSS, JavaScript, jQuery, and API integration.
+This GitHub repository contains the source code for an IMDB app clone, developed using HTML, CSS, JavaScript and API integration.
 
 ## Project Overview
 
 The IMDB app clone is a web application that mimics the functionality and design of the popular movie and TV show database, IMDB (Internet Movie Database). It allows users to search for movies, view detailed information about them, and add them to your favourite list.
 
-The project utilizes HTML, CSS, and JavaScript to create the user interface and handle user interactions. jQuery, a fast, small, and feature-rich JavaScript library, is used to simplify and enhance DOM manipulation and event handling.
+The project utilizes HTML, CSS, and JavaScript to create the user interface and handle user interactions. 
 
 To fetch movie data, the application integrates with the IMDB API. The API provides access to a vast collection of movies, TV shows, actors, and other related information. By leveraging the API, the clone app retrieves and displays relevant data based on user search queries and interactions.
 
@@ -40,14 +40,6 @@ To get started with the IMDB app clone on your local machine, follow these steps
 3. Launch the application by opening the `index.html` file in a web browser.
 
 4. Start exploring the app by searching for movies.
-
-## Dependencies
-
-The IMDB app clone relies on the following dependencies:
-
-- jQuery: A JavaScript library that simplifies DOM manipulation and event handling.
-
-Please ensure that you have an internet connection to fetch movie data from the IMDB API.
 
 ## Contributions
 
